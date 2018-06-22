@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="15G1611" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="PhotoApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="n8b-VG-3yo">
+                                <rect key="frame" x="47" y="117" width="280" height="213"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="280" id="HrF-LA-FXK"/>
+                                    <constraint firstAttribute="height" constant="213" id="Pc4-Hf-BLG"/>
+                                </constraints>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2I8-M1-lTN">
+                                <rect key="frame" x="142" y="380" width="90" height="30"/>
+                                <color key="backgroundColor" red="0.78664172070000005" green="0.33223599269999998" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="5Bw-hy-RDJ"/>
+                                    <constraint firstAttribute="width" constant="90" id="7Aw-Rq-Vqm"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="KohinoorBangla-Regular" family="Kohinoor Bangla" pointSize="17"/>
+                                <state key="normal" title="Take Photo">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="take:" destination="BYZ-38-t0r" eventType="touchUpInside" id="YqC-zv-bDG"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Rs4-KA-Tx6">
+                                <rect key="frame" x="142" y="435" width="90" height="30"/>
+                                <color key="backgroundColor" red="0.78664172070000005" green="0.33223599269999998" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="90" id="JVs-PK-Uei"/>
+                                    <constraint firstAttribute="height" constant="30" id="sVa-C6-4tZ"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="KohinoorBangla-Regular" family="Kohinoor Bangla" pointSize="17"/>
+                                <color key="tintColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                <state key="normal" title="Save Photo"/>
+                                <connections>
+                                    <action selector="save:" destination="BYZ-38-t0r" eventType="touchUpInside" id="0dE-wT-0tJ"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nCQ-Bc-3uj">
+                                <rect key="frame" x="142" y="490" width="90" height="30"/>
+                                <color key="backgroundColor" red="0.78664172070000005" green="0.33223599269999998" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="90" id="FUa-3T-NTj"/>
+                                    <constraint firstAttribute="height" constant="30" id="sOO-1y-qVa"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="KohinoorBangla-Regular" family="Kohinoor Bangla" pointSize="17"/>
+                                <color key="tintColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                <state key="normal" title="Gallery"/>
+                                <connections>
+                                    <segue destination="qf1-ZR-XYn" kind="show" id="64Y-3x-2PH"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fN7-dU-cMd">
+                                <rect key="frame" x="142" y="544" width="90" height="30"/>
+                                <color key="backgroundColor" red="0.78664172070000005" green="0.33223599269999998" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="90" id="7u7-20-m88"/>
+                                    <constraint firstAttribute="height" constant="30" id="L5l-vf-Hcz"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="KohinoorBangla-Regular" family="Kohinoor Bangla" pointSize="17"/>
+                                <state key="normal" title="Filter">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="PHOTOAPP" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1dC-gS-mPh">
+                                <rect key="frame" x="78" y="28" width="218" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="Fg9-lu-ny8"/>
+                                    <constraint firstAttribute="width" constant="218" id="s29-8o-A3u"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="KohinoorBangla-Semibold" family="Kohinoor Bangla" pointSize="40"/>
+                                <color key="textColor" red="0.78664172070000005" green="0.33223599269999998" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="0.43529411759999997" green="0.4431372549" blue="0.47450980390000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="1dC-gS-mPh" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" constant="-285.5" id="3r3-rZ-XKP"/>
+                            <constraint firstItem="Rs4-KA-Tx6" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="9jm-bB-4sQ"/>
+                            <constraint firstItem="2I8-M1-lTN" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="E40-SF-CIb"/>
+                            <constraint firstItem="2I8-M1-lTN" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" constant="61.5" id="EeW-ii-Wq9"/>
+                            <constraint firstItem="n8b-VG-3yo" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="OwI-ur-LWd"/>
+                            <constraint firstItem="nCQ-Bc-3uj" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="P7K-Fq-WqN"/>
+                            <constraint firstItem="fN7-dU-cMd" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Y1r-oe-2N6"/>
+                            <constraint firstItem="Rs4-KA-Tx6" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" constant="116.5" id="byi-3G-dPd"/>
+                            <constraint firstItem="nCQ-Bc-3uj" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" constant="171.5" id="jSG-Vy-rfV"/>
+                            <constraint firstItem="fN7-dU-cMd" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" constant="225.5" id="pLo-1h-OyQ"/>
+                            <constraint firstItem="1dC-gS-mPh" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="qKe-rh-nmp"/>
+                            <constraint firstItem="n8b-VG-3yo" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" constant="-110" id="urD-7X-icB"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="imageOne" destination="n8b-VG-3yo" id="pFr-RK-swd"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="136.80000000000001" y="138.98050974512745"/>
+        </scene>
+        <!--Gallery View Controller-->
+        <scene sceneID="Nbz-Uy-Aqi">
+            <objects>
+                <viewController id="qf1-ZR-XYn" customClass="GalleryViewController" customModule="PhotoApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="6jE-i3-HY5"/>
+                        <viewControllerLayoutGuide type="bottom" id="NBY-Eb-6nI"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="wFX-qP-MFs">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="GALLERY" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hh0-z0-dKF">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="41"/>
+                                <color key="backgroundColor" red="0.78664172070000005" green="0.33223599269999998" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="tintColor" red="0.78664172070000005" green="0.33223599269999998" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="375" id="9eA-Vi-D3H"/>
+                                    <constraint firstAttribute="height" constant="41" id="raa-Lq-B0f"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="KohinoorBangla-Regular" family="Kohinoor Bangla" pointSize="23"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gOu-Oa-af4">
+                                <rect key="frame" x="313" y="617" width="46" height="30"/>
+                                <color key="backgroundColor" red="0.78664172070000005" green="0.33223599269999998" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="46" id="7we-Uh-WRh"/>
+                                    <constraint firstAttribute="height" constant="30" id="Fdw-28-wCZ"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="KohinoorBangla-Regular" family="Kohinoor Bangla" pointSize="17"/>
+                                <state key="normal" title="BACK">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="BYZ-38-t0r" kind="show" id="T8g-aM-wtr"/>
+                                </connections>
+                            </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="M2P-wr-isT">
+                                <rect key="frame" x="55" y="124" width="264" height="197"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="197" id="7gw-hD-eXO"/>
+                                    <constraint firstAttribute="width" constant="264" id="HNY-zP-Kks"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.43529411759999997" green="0.4431372549" blue="0.47450980390000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="tintColor" red="0.43529411759999997" green="0.4431372549" blue="0.47450980390000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="M2P-wr-isT" firstAttribute="centerY" secondItem="wFX-qP-MFs" secondAttribute="centerY" constant="-111" id="6Bg-oD-nx1"/>
+                            <constraint firstItem="gOu-Oa-af4" firstAttribute="centerY" secondItem="wFX-qP-MFs" secondAttribute="centerY" constant="298.5" id="I38-HZ-iq3"/>
+                            <constraint firstItem="M2P-wr-isT" firstAttribute="centerX" secondItem="wFX-qP-MFs" secondAttribute="centerX" id="Rfu-Ls-Ym8"/>
+                            <constraint firstItem="hh0-z0-dKF" firstAttribute="centerX" secondItem="wFX-qP-MFs" secondAttribute="centerX" id="Y1y-Cw-eVa"/>
+                            <constraint firstItem="hh0-z0-dKF" firstAttribute="centerY" secondItem="wFX-qP-MFs" secondAttribute="centerY" constant="-313" id="kWw-P3-GQM"/>
+                            <constraint firstItem="gOu-Oa-af4" firstAttribute="centerX" secondItem="wFX-qP-MFs" secondAttribute="centerX" constant="148.5" id="nnO-Yx-ODN"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="imageTwo" destination="M2P-wr-isT" id="9aD-t6-tF5"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="zgy-sL-RmN" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="824.79999999999995" y="138.98050974512745"/>
+        </scene>
+    </scenes>
+</document>
